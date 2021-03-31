@@ -97,7 +97,7 @@ def _write_node(file_name, coords, downsample=None):
             node = coords[key]
             if node != 0:
                 if downsample:
-                    if count % downsample == 0:
+                    if count % int(downsample) == 0:
                         fnode.write(" Node: " + str(node) + '\n')
                         x, y, z = key.split("_")
                         fnode.write(" " + str(x) + " " + str(y) + " " + str(z) + '\n')
