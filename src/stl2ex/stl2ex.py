@@ -191,7 +191,7 @@ def main():
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Transform Neurolucida Xml data file to ex format.")
+    parser = argparse.ArgumentParser(description="Transform STL data file to ex format.")
     parser.add_argument("input_stl", help="Location of the input xml file.")
     parser.add_argument("--output-ex", help="Location of the output ex file. "
                                             "[defaults to the location of the input file if not set.]")
